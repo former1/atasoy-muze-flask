@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body class="bg-gradient-to-r from-gray-800 to-blue-900">
+    
+    <div class="flex  h-10  text-gray-200   mb-3 "> 
+            <div class="flex flex-row w-screen bg-black justify-end" >
+         
+                         <!--
+             <a class="nav-item nav-link mr-3 mt-1 hover:underline"  href="/login"> </a>
+                    <a class="nav-item nav-link mx-3 mt-1 hover:underline"  href="/register"> Kayıt Ol </a>
+           -->
+                   
+                   <a class="nav-item nav-link mx-3 mt-1 pr-5 hover:underline"  href="/"> Ana Sayfa </a>
+            </div>
+
+
+
+    </div>
+
+
+<div class="container mx-auto">
+        
+            
+</div>
+
+<!--
+<form method="POST" action="/upload" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label for="inputFile">File input</label>
+        <input class="form-control-file" type="file" name="inputFile">
+    </div>
+
+          
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+-->
+
+<div class="my-12 pb-12 w-full max-w-screen-md mx-auto">
+    <h1 class="text-4xl font-bold text-center text-base text-white">Eser Yükle</h1>
+    <form class="mt-2 w-full" action="" method="POST" enctype="multipart/form-data">
+    
+       
+        <div class=" my-6">
+            <div class="">
+                <label class="text-sm font-bold text-base  text-white" for="eser">Eser Adı</label>
+                <div class="">
+                    <input type="text" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="" name="eser">
+                </div>
+            </div>
+        </div>
+        <div class=" my-6 grid grid-cols-1 gap-6 sm:mb-0 sm:gap-6 sm:grid-cols-2">
+
+            <div class="">
+                <label class="text-sm font-bold text-base text-white " for="eser_sahibi">Eser Sahibi</label>
+                <div class="">
+                    <input type="text" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="" name="eser_sahibi">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" my-6">
+            <div>
+                <label class="text-sm font-bold text-base  text-white" for="detail">Eser Detayı</label>
+
+                <textarea  class=" w-full border border-gray-300 rounded-sm px-4 py-3 h-60 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 resize-none" placeholder="" name="detail"></textarea>
+
+            </div>
+        </div>
+
+        <!--
+        <div class="flex justify-center">
+            <div class="mb-3 w-96">
+              <label for="inputFile" class="form-label inline-block mb-2 text-gray-700">Default file input example</label>
+              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" name="inputFile">
+            </div>
+          </div>
+        -->
+
+
+
+        <!--
+             <div class=" my-6">
+            <div class="">  
+                <label class="text-sm text-gray-600  false" for="resume">Resume</label>
+                <div class="">
+                    <input type="file" name="resume" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
+                </div>
+            </div>
+        </div>
+
+        -->
+       
+        <div class=" my-6">
+            <button class=" inline-block rounded-sm font-medium border border-solid cursor-pointer text-center text-base py-3 px-6 text-white bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 w-full" type="submit">Yükle</button>
+        </div>
+    </form>
+</div>
+</div>  
+
+
+
+    
+
+
+
+
+
+            <footer class="footer bg-black relative pt-1 border-b-2 border-blue-700" id="footer">
+                <div class="container mx-auto px-6">
+            
+                    <div class="sm:flex sm:mt-8">
+                        <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
+                            <div class="flex flex-col mb-4">
+                                <span class="font-bold text-gray-400 uppercase mt-4 md:mt-0 mb-2">İletİşİm</span>
+                                <span class="my-2"><a href="https://mail.google.com/mail/u/0/#inbox" class="text-white text-md hover:text-blue-500">atasoyfomer@gmail.com</a></span>
+                                <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-500">0507 908 4142</a></span>
+                            </div>
+                            <div class="flex flex-col mb-4">
+
+
+                                <span class="font-bold text-gray-400 uppercase mb-2">Sosyal Medya</span>
+                                <span class="my-2"><a href="https://github.com/" class="text-white  text-md hover:text-blue-500">GitHub</a></span>
+                                <span class="my-2"><a href="https://twitter.com/" class="text-white text-md hover:text-blue-500">Twitter</a></span>
+                                <span class="my-2"><a href="https://www.instagram.com/?hl=tr" class="text-white text-md hover:text-blue-500">Instagram</a></span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+
+            
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

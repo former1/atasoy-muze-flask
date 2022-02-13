@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+    
+
+
+<body class="bg-gradient-to-r from-gray-800 to-blue-900">
+    
+    <div class="flex  h-10  text-gray-200  fixed"> 
+            <div class="flex flex-row w-screen bg-black justify-end" >
+
+                    
+
+                   
+            </div>
+
+
+
+    </div>
+
+
+
+    
+
+    <div  class="grid w-full h-screen">
+
+           <!--   <img class="w-32 h-32 rounded-full mx-auto" src="my_photo.jpg" alt="" width="384" height="512">   --> 
+          
+        <h1 class=" text-4xl text-center pt-60 h-screen ">
+            <p class="  font-bold text-white">Müze Veritabanı</p>
+            <p class="text-xl pt-8 text-center text-base font-semibold text-white">Amacımız eserlerini dijital ortama geçiremeyen, arama motorlarında gözükmeyen müzeleri tek bir çatı altında toplayarak </br> hem materyal hem de görsel malzeme olarak destekleyecek bir platform sunmaktır</p>
+            
+            <div class="p-5">
+                         
+                <a href="/bolgeler">
+                    <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700">Ziyaretçi Girişi</button>
+                </a>
+
+
+
+                <a href="/login">
+                    <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700">Yetkili Girişi</button>
+                </a>
+                
+
+
+            </div>
+
+
+            
+
+        </h1>
+
+    </div>
+
+
+
+<!--
+
+    <div class="w-full lg:w-1/3 mx-auto rounded-lg lg:my-20 px-4 py-4 ">
+        <p class="text-lg text-white font-medium text-center mb-2">Müze Yetkilisi Misiniz? Giriş Yapın</p>
+        <form action="/form_login" method="post">
+            <input type='text' name='username' placeholder="Kullanıcı Adı"
+            class="w-full mb-3 px-4 py-3 border rounded-lg text-gray-700 focus:outline-none " />
+
+		<input type='password' name='password' placeholder="Şifre"
+            class="w-full mb-3 px-4 py-3 border rounded-lg text-gray-700 focus:outline-none " />
+
+		<button class="text-white py-3 rounded-lg w-full font-bold text-xl tracking-wider bg-green" 
+            >Giriş Yap</button>
+        </form>
+		
+
+	</div>
+        
+-->
+    
+    
+
+
+    
+
+
+<!--
+
+
+        <p class="text-lg pt-24 mt-24 mb-0 capitalize text-5xl font-bold text-center">SORTING ALGORITHMS</p>
+
+        
+        <div class=" mx-4 my-10 p-5  rounded-xl bg-white bg-opacity-40 shadow-2xl">
+
+
+            <h1 class=" mb-12 text-3xl capitalize font-bold" id="bubble">Bubble Sort</h1>
+
+            <h2 class=" mb-4 text-lg capitalize font-bold">Description of the algorithm</h2>
+            <p class = "tracking-wide ">
+                Although bubble sort is one of the simplest sorting algorithms to understand and implement, its O(n2) complexity means that its efficiency decreases dramatically on lists of more than a small number of elements. Even among simple O(n2) sorting algorithms, algorithms like insertion sort are usually considerably more efficient. <br>
+
+               <br> Due to its simplicity, bubble sort is often used to introduce the concept of an algorithm, or a sorting algorithm, to introductory computer science students. However, some researchers such as Owen Astrachan have gone to great lengths to disparage bubble sort and its continued popularity in computer science education, recommending that it no longer even be taught. <br>
+
+               <br> The Jargon File, which famously calls bogosort "the archetypical [sic] perversely awful algorithm", also calls bubble sort "the generic bad algorithm".[5] Donald Knuth, in The Art of Computer Programming, concluded that "the bubble sort seems to have nothing to recommend it, except a catchy name and the fact that it leads to some interesting theoretical problems", some of which he then discusses.
+                
+                
+            </p>
+
+
+            <h3 class=" mb-4 my-4 text-lg capitalize font-bold">Implementation</h3>
+            
+            <div class = "border-2 mx-4  p-5  bg-black bg-opacity-80 rounded-xl text-white">
+ 
+                
+                <pre>
+
+
+void bubbleSort(int array[], int size) {
+
+    for (int i = 0; i < (size-1); ++i) 
+    {
+
+      for (int j = 0; j < size-(i-1); ++j)
+      {
+  
+        if (array[j] > array[j + 1]) {
+            swap(array[j],array[j+1]);
+        }
+      }
+    }
+  }
+                    
+                </pre>
+
+                   
+
+                
+    
+             </div>
+
+        </div>  
+
+
+
+
+
+
+        <div class=" mx-4 my-10 p-5  rounded-xl bg-white bg-opacity-40 shadow-2xl">
+
+
+            <h1 class=" mb-12 text-3xl capitalize font-bold" id="insertion">Insertion Sort</h1>
+
+            <h2 class=" mb-4 text-lg capitalize font-bold">Description of the algorithm</h2>
+            <p class = "tracking-wide ">
+                Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain. <br>
+
+              <br>  Sorting is typically done in-place, by iterating up the array, growing the sorted list behind it. At each array-position, it checks the value there against the largest value in the sorted list (which happens to be next to it, in the previous array-position checked). If larger, it leaves the element in place and moves to the next. If smaller, it finds the correct position within the sorted list, shifts all the larger values up to make a space, and inserts into that correct position. <br> 
+
+              <br>  The resulting array after k iterations has the property where the first k + 1 entries are sorted ("+1" because the first entry is skipped). In each iteration the first remaining entry of the input is removed, and inserted into the result at the correct position, thus extending the result becomes with each element greater than x copied to the right as it is compared against x.
+                
+                
+            </p>
+
+
+            <h3 class=" mb-4 my-4 text-lg capitalize font-bold">Implementation</h3>
+            
+            <div class = "border-2 mx-4  p-5  bg-black bg-opacity-80 rounded-xl text-white">
+
+                
+                <pre>
+
+
+for (int i = 0; i <= data.lenght(); i++)
+{
+    int j=i;
+
+    while( j> 0 and data [i] < data[j-1])
+        j--;
+
+    int temp=data[i];
+    for (int k=i; k >j; k--)
+    {
+        data[k] =data[k-1];
+    }
+    data[j]= temp;
+
+}         
+                </pre>
+
+                   
+                
+                
+    
+             </div>
+
+             
+
+        </div>  
+
+
+
+
+
+
+
+
+        <p class="text-lg pt-24 mt-24 mb-0 capitalize text-5xl font-bold text-center">SEARCH ALGORITHMS</p>
+
+        
+        <div class=" mx-4 my-10 p-5  rounded-xl bg-white bg-opacity-40 shadow-2xl">
+
+
+            <h1 class=" mb-12 text-3xl capitalize font-bold" id="binary">Binary search</h1>
+
+            <h2 class=" mb-4 text-lg capitalize font-bold">Description of the algorithm</h2>
+            <p class = "tracking-wide ">
+                In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array. <br>
+
+               <br> Binary search runs in logarithmic time in the worst case, making O(\log n) comparisons, where n is the number of elements in the array. Binary search is faster than linear search except for small arrays. However, the array must be sorted first to be able to apply binary search. There are specialized data structures designed for fast searching, such as hash tables, that can be searched more efficiently than binary search. However, binary search can be used to solve a wider range of problems, such as finding the next-smallest or next-largest element in the array relative to the target even if it is absent from the array. <br>
+
+               <br> There are numerous variations of binary search. In particular, fractional cascading speeds up binary searches for the same value in multiple arrays. Fractional cascading efficiently solves a number of search problems in computational geometry and in numerous other fields. Exponential search extends binary search to unbounded lists. The binary search tree and B-tree data structures are based on binary search. <br>
+                
+                
+            </p>
+
+
+            <h3 class=" mb-4 my-4 text-lg capitalize font-bold">Implementation</h3>
+            
+            <div class = "border-2 mx-4  p-5  bg-black bg-opacity-80 rounded-xl text-white">
+
+                
+                <pre>
+int bs(int a){
+
+    int ek=0;
+    int eb=n-1;
+    while(eb>=ek)
+    {
+        int orta =(ek+eb)/2;
+        if (dizi[orta]==a){
+            return orta;
+        }
+        if (dizi[orta] < a){
+            ek = orta+1;
+        }
+        if (dizi[orta] > a){ 
+            eb = orta-1;
+        }
+    }
+    return -1;
+}        
+                </pre>
+
+                   
+
+                
+    
+             </div>
+
+        </div>  
+
+
+
+
+
+
+
+
+
+        <p class="text-lg pt-24 mt-24 mb-0 capitalize text-5xl font-bold text-center">GRAPH ALGORITHMS</p>
+
+
+        <div class=" mx-4 my-10 p-5  rounded-xl bg-white bg-opacity-40 shadow-2xl">
+
+
+            <h1 class=" mb-12 text-3xl capitalize font-bold" id="dfs" >Depth First Search</h1>
+
+            <h2 class=" mb-4 text-lg capitalize font-bold">Description of the algorithm</h2>
+            <p class = "tracking-wide ">
+                Depth First Search is one of the main graph algorithms. Depth First Search finds the lexicographical first path in the graph from a source vertex u to each vertex. Depth First Search will also find the shortest paths in a tree (because there only exists one simple path), but on general graphs this is not the case. <br>
+
+                
+                <br> The algorithm works in O(m+n) time where n is the number of vertices and m is the number of edges. <br>
+
+               <br> The idea behind DFS is to go as deep into the graph as possible, and backtrack once you are at a vertex without any unvisited adjacent vertices. <br>
+
+               <br> It is very easy to describe / implement the algorithm recursively: We start the search at one vertex. After visiting a vertex, we further perform a DFS for each adjacent vertex that we haven't visited before. This way we visit all vertices that are reachable from the starting vertex.
+            </p>
+
+
+            <h3 class=" mb-4 my-4 text-lg capitalize font-bold">Implementation</h3>
+            
+            <div class = "border-2 mx-4  p-5  bg-black bg-opacity-80 rounded-xl text-white break-word hover:focus">
+
+                
+                <pre>
+vector< vector < int > > adj;
+int n;
+                    
+vector< bool > visited;      
+    void dfs(int v) { <br> 
+        visited[v] = true; 
+        for (int u : adj[v]) { <br>
+            if (!visited[u]) 
+            dfs(u); 
+            }
+        }   
+                </pre>
+
+                   
+
+                
+    
+             </div>
+
+        </div>  
+
+
+
+
+
+
+
+        <div class=" mx-4 my-10 p-5  rounded-xl bg-white bg-opacity-40 shadow-2xl">
+
+
+            <h1 class=" mb-12 text-3xl capitalize font-bold" id="bfs">Breadth-first search</h1>
+
+            <h2 class=" mb-4 text-lg capitalize font-bold">Description of the algorithm</h2>
+            <p class = "tracking-wide ">
+                The algorithm takes as input an unweighted graph and the id of the source vertex s. The input graph can be directed or undirected, it does not matter to the algorithm. <br>
+
+               <br> The algorithm can be understood as a fire spreading on the graph: at the zeroth step only the source s is on fire. At each step, the fire burning at each vertex spreads to all of its neighbors. In one iteration of the algorithm, the "ring of fire" is expanded in width by one unit (hence the name of the algorithm). <br>
+                
+               <br> More precisely, the algorithm can be stated as follows: Create a queue q which will contain the vertices to be processed and a Boolean array used[] which indicates for each vertex, if it has been lit (or visited) or not. <br>
+                
+               <br> Initially, push the source s to the queue and set used[s]=true, and for all other vertices v set used[v]=false. Then, loop until the queue is empty and in each iteration, pop a vertex from the front of the queue. Iterate through all the edges going out of this vertex and if some of these edges go to vertices that are not already lit, set them on fire and place them in the queue. <br>
+                
+               <br> As a result, when the queue is empty, the "ring of fire" contains all vertices reachable from the source s, with each vertex reached in the shortest possible way. You can also calculate the lengths of the shortest paths (which just requires maintaining an array of path lengths d[]) as well as save information to restore all of these shortest paths (for this, it is necessary to maintain an array of "parents" p[], which stores for each vertex the vertex from which we reached it). <br>
+                
+                
+            </p>
+
+
+            <h3 class=" mb-4 my-4 text-lg capitalize font-bold">Implementation</h3>
+            
+            <div class = "border-2 mx-4  p-5  bg-black bg-opacity-80 rounded-xl text-white">
+
+                
+                <pre>
+vector < vector< int > > adj;  
+    int n; 
+    int s; 
+    
+    queue< int > q;
+    vector< bool > used(n);
+    vector< int > d(n), p(n);
+    
+    q.push(s);
+    used[s] = true;
+    p[s] = -1;
+    while (!q.empty()) 
+    { 
+        int v = q.front();
+        q.pop();
+        for (int u : adj[v]) 
+        {
+            if (!used[u]) 
+            {
+                used[u] = true;
+                q.push(u);
+                d[u] = d[v] + 1;
+                p[u] = v;
+            }
+        }
+    }
+                </pre>
+
+                   
+
+                
+    
+             </div>
+
+        </div>  
+
+
+
+
+        <div class ="h-screen"></div>
+
+    -->
+
+
+
+            <footer class="footer bg-black relative pt-1 border-b-2 border-blue-700" id="footer">
+                <div class="container mx-auto px-6">
+            
+                    <div class="sm:flex sm:mt-8">
+                        <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
+                            <div class="flex flex-col mb-4">
+                                <span class="font-bold text-gray-400 uppercase mt-4 md:mt-0 mb-2">İletİşİm</span>
+                                <span class="my-2"><a href="https://mail.google.com/mail/u/0/#inbox" class="text-white text-md hover:text-blue-500">atasoyfomer@gmail.com</a></span>
+                                <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-500">0507 908 4142</a></span>
+                            </div>
+                            <div class="flex flex-col mb-4">
+
+
+                                <span class="font-bold text-gray-400 uppercase mb-2">Sosyal Medya</span>
+                                <span class="my-2"><a href="https://github.com/" class="text-white  text-md hover:text-blue-500">GitHub</a></span>
+                                <span class="my-2"><a href="https://twitter.com/" class="text-white text-md hover:text-blue-500">Twitter</a></span>
+                                <span class="my-2"><a href="https://www.instagram.com/?hl=tr" class="text-white text-md hover:text-blue-500">Instagram</a></span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+
+            
+
+
+
+
+</body>
+</html>
+
+
+
