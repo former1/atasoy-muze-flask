@@ -11,7 +11,7 @@ from base64 import b64encode
 import base64
 from io import BytesIO
 
-DB_NAME ="eserlist.db"
+DB_NAME ="listedb.db"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] ="1991"
