@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="module">
+      import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+    </script>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+</head>
+
+<body class="bg-gradient-to-r from-gray-800 to-blue-900">
+
+    
+    
+    <div class="flex  h-10  text-gray-200   mb-3 "> 
+            <div class="flex flex-row w-screen bg-black justify-end" >
+
+           
+            </div>
+
+
+
+    </div>
+
+
+    <!--
+          <div class="embed-container"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12066.329201498538!2d29.067450000000004!3d40.88104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbb3ffc0eab03a28!2sSait+Faik+Abasiyanik+Museum!5e0!3m2!1sen!2sus!4v1417439998905" width="600" height="450" frameborder="0"></iframe></div>
+    
+
+   
+          <a data-fancybox="gallery" href="https://i4.hurimg.com/i/hurriyet/75/750x422/5e985f35c9de3d007c50b51b.jpg"> <img src="https://i4.hurimg.com/i/hurriyet/75/750x422/5e985f35c9de3d007c50b51b.jpg" alt="b"></a>
+    -->
+
+
+
+
+
+
+    
+      <div class="flex justify-center items-center">
+        <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
+
+        <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
+          <div role="main" class="flex flex-col items-center justify-center">
+            <h1 class="text-3xl text-center font-bold tracking-wide text-white lg:text-5xl">
+                Ahmet Hamdi Tanpınar Edebiyat Müze Kütüphanesi
+
+          </h1>
+          </div>
+
+
+
+
+          <div class="lg:flex items-stretch md:mt-12 mt-8 ">
+            <div class="lg:w-1/2">
+
+              <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
+
+                <div class="sm:w-1/2 relative hover:shadow-2xl">
+
+                  <a href="/ahmet_hamdi_galeri">
+                    
+                    <div>
+                      <div class="absolute bottom-0 left-0 p-6 ">
+                        <h2 class="text-xl font-semibold 5 text-white">Fotoğraf Galerisi</h2>
+                      </div>
+                    </div>
+
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYZGRgaHB4aGhwaHBoaGh4cGR4aHBoaGhoeIS4lHB4rHxwcJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8PGhIRGjEhGCE0MTQxNDQ0NDQ0MTExMTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTE0ND80ND80NP/AABEIAOwA1gMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwEEBQAGB//EAEAQAAEDAQUFBAcFBwQDAAAAAAEAAhEhAwQSMUEFIlFhcYGRobEGEzKSwdHwQlJicuEHFCMzU7LxFYKiwhZD0v/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAHxEBAAIABwEBAAAAAAAAAAAAAAERAhITITEyYUFR/9oADAMBAAIRAxEAPwD1PqxKJtmpaEYK8zuAsC5rAjUQqIwqAIRyoIUEBQ4KdUSCWtQvMAnkjlC4Sgzxf+QUNvBeYyCP9zqeCH91IMhY3b2V79fMABhBctph4EiJRbSueNnMFIuF0ImQRFBOXYobND9/YCGuME0CPDaaOaeCxn3dxO/oaRnGpla92flyViWZgLLZ5MAAkZik+aIvtPuD67V15YZxszGfMK1Z2mJshbRWut6Ln4C2M/BXXDl2rLsJ9caaur81roAAUkKVyASELgjlCqFNb3hTaA6KAd5HKyPm37RW/wAezMZ2fk4rkz9pX82xP4HebVy9GDrDni5fRwFzChA5KGuquToauhLa+TEFMKgiV0pDbw1zsINeHSnmnAqCHvjNdZvlUNsWzmMJY3ERXxiexPur5AiYzPyqguKCVDvrsXNQQQgKY5AVkA8SFzmqWmURCNEhlU4NHBBCkGlaFISTQ0KphwOkey7wVhriie0EEFaRUsR/EJ5n68VfBWddqPw6ifryWgEHKHLiVxKCNFCmVAKorFu9mmtAOaG0auBKwPn/AO0hkWlj+V/m1Qm/tIZv2J5P82rl6MHWGJ5ewN/cDEBNZfvwqg+zM/qETWngVybaP72OBQf6iycMwVVxEaJdtZNeK56HUKDUu7GkYgBWa9SUb+CoWTgLHAXbwpNeNFmXa8Pa50HEcq9eGiDefHfx1T7IQAsywvzRAeDPHOq0LK2a4UI+skDHIXOgKHOXRKCUD5KOUDqBQQEN4vDWNL3eyM1DCdVl+kM+qpkHCfEeakNGjbtl+L3U6z2pZOIAeAToaeawrhcC5s7vSap182UQ3FAP5TJHYc1qotl6WzTVg+jN9Lg6zcZLIwznh+MU71vFWhQs3D1pH4vNoWgFmAfxj+af+LVoqCC5QSuXIBUhYd62tate8Nsg4MdhFTJ6CFpm9tDQXGHGN0VgnRUWHoMKqWm0QDGE8zwUsvbHTDq8DRZlYeP/AGlM/kH84/sUo/2kD+HYu/E4d4b8lK74OsOc8r52Valxhx4xi4/BDb3S8MaTUdCCvQ3e9ML8IcCS0eGc8Ed9tMABOUx3rlbbylmL2ZILjHLVNN7vLAC8GAYyPmt9l7AD3kboI+SO9Xlu7UV+CWUxG3y1ImBMjuqlPvTm4n4JcSBGmWfmtP1oLiNJknsyTNnx6wjQgHLWqDJdtkxvWQrTNRYbWaC1rmOJgEGcuQqty8XUEOAaCS455TQfDRTcLphJLmNxZjWBWIKbA9n3ovHsODeLtenFXoUqYUAQlWjk5wSrVkgqUFMcqW1m/wAMiJkgZxFaHvhWWsJHCeKl1gHgtP0dEGBcHWzXNywOdhqPFX7J94Jh7GgAxiFDGhrmqVi+0xtbUBhOgNdZlbZeSA2s5VifCi1IXsS5BjS41eScTvGB9ZytUoGNgQjUGS60i2cD94eLWrSDllXv+d/uZHgrd8tQxhccqCme8Y+KCww69veiBVS5vcWl7hEndA+6KDvz7VYa7F0Hmg8ztG1tWutHMcwAONCYcegKwXXq0cZL4is1odMhxWttZ8vcOLj5rDYN+NJWoSV916th9sdojSdesJbb5bT9kns+Su3+wlwDa0rCrmywEExSpGtEGf6Xh5u1i95G84wBNKHNckelV+NrZMaRAa8lvQty+uK5dMPDMvopuuEi0ZGICCKbw1HVWS0PaC00+qKbFsDNJtWFhL21aavb/wBhz4hcmxuuste0wcQhYz2F8uo2A5x4zTFANMx4rWtr2fV42QRTzhY19c4ODJnHBpwdBjvCCxdLF2HGMsozpST1Vi6WZbaDFrIHYrthYFjQ3lGfeq4BAYY+2ZrxlQWrHekkZOdHTjyTWN3p5D4pd2kMFNJz41+KYXxVA5QkC3/CVxtz90oGuKW4oHW/LxXOtoBJgRXuQS1ip33atjZUc8Fw+y2p8Mu1eZv+2X2k1LGaBpinM6rJe1WMP6ky3m2tq95tbKYdmAJg5VC1LV72MNq52JwiNBUgQBzkrK2VaRYksMHE0OzmCTMDmBHerPpA/DZsYHTLpHQTToCVfqtC7bfsnUcSw/iFPeC1bO0a4S0gjiKhfOkVhen2bsTHEHlkeo1TKlvYWzZts/ufH5I9qjceD7OBxGcy0H4wQsbZF6L3veaEuaTw1BSds3u1l7HPGEkigjdEEealbq9JdyGMY1zhIaJmBpwXOvrBkZngvEvvT49p3DMfJL9Y40k9rilJbZvbLPEXvdqTEikmVStbzYN9lgdz/UrPNlSYGcZIZg1AjorQfedoOdAyA4GUlzi7eM/pRRn8PgnPLsOp8kGP6QtAayKVPkuXbfO6zSp8mrl0jhiX1SwfDA4yYbPE0GiC/W02eNpLZAMmkTxBWdta8ll3bvYSYBzBNJgEZJ2ymuN2biriJIDt6k0BXKtnRTsbWGvYTMkERlnJEDJDZuL3B8ig3eFBA8VN/aWtJIj+IMJgChkHLNWrrYVG6ILY0ORGiCX2pdY2ge8AmjTloMgDOaqXJhYxjGvxCecgnqaBZd7eRaEZVIgQMumslWNn2pbas4GnarWyPXvbDaCYGS8y/bFqy1IeMLcXsuFWt5RnSs81uXa/YnlkamvRef8ASuzd61jhXE2ABU7prTtCkLL0tjaB4DmukHgmhoK8fs91pYhrxMPAhpq11Tkfsu85C0r/ALYabHcrLsLwTDmzJOXSJySktuOsgsW8Xhz7taEgB7Q5rgDMRSutQtE3pxscbACSwESSBlWvKvcvIXVzsFoQfsGZ1BI8ZIViBmh2XaiBSyjatIs3W0wuBkxInzCs7UvOO0MGWtEDhxJ7/JURqpsxrxKiiSLR1U20KQ8Ko09jPjHAOh5UnNM2zaYnFwBAmO0QPgo9HjvPH4Z7j+qLag3T+Z3mCs/V+KDmxFUi0e6m8c4zVi8GoVW3YRh518lYRZcNw9VTIVq09jqT8FVY4qwGsNOXP6oiFuYjJRZ6z2jpwUWY0UGd6QWstYODneIZ8guS9ts9j/cf7Vy6RwzL2/pA8myZmWh1esENJ7V6DZ5AsmACmBvkFk1e0sc3dNDAk+SvMtC1rWgUAgUOi43s6UX6RWuGxxACQ5vmpuzzDSBvFjyBxMthUPSG0cbE6VbpzTtlXpzrJhzOWXA1qnw+vPXhxDgTJicRj7RJkE5TIK0Nn2TnOY+Iawgmv3jAgLR2lYYrJ4j2iHGmoIryouuDCGmBTs0yoreyU65vwWzsVG71dO9K2/ahz7NzXNIEtO9BBdEGmlFq2Vq7X4BFa2TXwHAQCHdoyUtVPZVpZuu7WPjCZ3TWKnXisnaezAAXMe0gCk+1056dF6S72bGNwjIExPOpRWjxHszyollMe63vDdSDGJrHNEHPMSsNjXNsnEiA5kf8mr0F5lxLcAjOMwlX55ewscNKcjollPIJrClOFUTM1tk4+aY0QEkO3uiYornNSbUVAVgFJtBXsSBb2KCbWmWEz0/zCdtJjuftu7oYQg2FIeebT4EL0T32Mkuw8546+SkzufHlDYOK60u73Ry/ReqHqdA1Ma2zH3fBMy08lbWDob2nx/RVms4Zr2X7pZGsNI0qqn+lMk0aTNM5HI1TMlPNAnMGNO3VcGnOIHLktPamzwxrSykkg1PhKrWQbDcUipqK5DKmRlLKYW3m1ZT73jgPxC5dt1tWcIdE8i0KV1jhiX0W7NAynvPxTLWwD643j8roQ2Ka0VlcHQi8bPxsLHPeQfy6ZaKLps91mMLHy3PC4eRGSujLmjCWKlqx5aRgGWYd84TLtYwwAyDqJViVICBfq+ZU+q5lNCAuQLNnz8Et1m7iPrsTiUDidAgUbN/HyQOxDPF7s+RVuVBKDxm2bqWPLh7L6ihFdRB+qrPC2fSe3LrQM0Y0d7qz3QsV5W44ZMshQlMBS2CgqmNhBGSB0kgCpNABqU1yO524Y8Oic+tdRzRWxdLrgfZNzOBwdGjquIPMSgvN2ALyZq/EIB1CEXgucCJiTpxjT6yTnCQ2kk/BreIzzUVmS7RkiR7URA8kWJ5ESxsdtOXBXA3PEQOVdM+uihrAQC3DxNJjkZUtCGEwJfloGite9S+0Y0mhJkfUJrGmCAJIdEeeetUL2OmohtKgRU9uSqkXlrXt1nQ/AqmbRwGFoIEmeo5LR9R1qdPHJQWAU3uOhz0UseW2zMsHAO8wuTvSNgD2Hi06cCAuXowcOcvoVmKJwKSxMavM6LFmEZKCzNFzigNqNC1cCgF9VGEo0MoILV0Hgia7khfbAZnLqgjEoe4ASTAGfRUre+vJhjJzGI+z3qhgfaEl7y4AxhEgSM/rNBkbXtA+2e5tRQA9AAqQbJTryAHvAEDEYCBgW0Q0ZJjVDeSMKCHlJxQQeBTnmUhwyVglp/vZad0QdZbrz55VUu2i6hDYNO8dc9e9WLSwDsLXA4pNRGQkwdNNFAurRV0mlAQDWcs4U2VUdegc25yTSpB+s1WtLwBRmINE0PPPzWs27spERnkClvsW0phExURGp7aqWjMF6M6x14VB70eKQTDiJmp0OqteqFRJaYrIia8VLrqciSJOf1nRWxXsrRzYpiHUkR0V8OBGIVBEAEwARxAlVG3XCRVxmszTvT32OYa4yaSaHTipKvOelHts44TPeOS5D6RiHskzumvbHwUrvg6w5y+gtoEWJLa46IpK87ossNEQFUDUyUDMSjEl41LUBSoD10oCUBl4Ve3eYERGs07lJVS8PAzMTTKc0FYPpBJ1FTDYOc16VKC7gtcSCHAmTArIkkCZnXVBenMAgnPlpWlIIrCMvZABjQAxBjpqqMnbQi1JiJAPhCpYyFf2r7bZ4RoemXKFTeFqECLXkibacko6IwEBOJjLxVvZl3xS9zQ4AwBMAGlTxzVNzqLR2RaQMMGpJNDwgZc1J4F3E2QC4AjgYNaNprmgE4cTjqRMBvhwyVjFSHESdYI48cjyQWbiaSKjdzM5moooqQIw0qZBJkiOzwUFprEnStaDrSuaW5xJaHtzkEiSBz4/FCXEVPGkGD0QNaWmtIrmDArlXJUbw9hkMcGuz6nrMK1gxQZocxSCDrKSx4DjjndyJbSOR7QgddrIFjQ0yRSRTSa967DJggyAamO0/CqS61DC4TIcZpmDlHTJTa2pmC6BlUQezig816SWZbaMkzLT56rkHpETjaCZhseP13rl6MHWHOX0VoooHJKbfGHJ7UwOByIXmdFhtFwMceKgKHFASYwpLQm4qICJQOKEvQFyAbcOI3SBzMlViHVBAIplPWelFaoheUGdavDQcQPh9f5SLJrC7EHb2mlRXNWrSzdGJoFDQaGPil24DgTAkazPAEDmqM2/wcLwZmQeFIyVB4WvfxLGEiDlHCnPsWc5qsSUrEZInFG9ngheKKoBpotS42Ra0HDJofa+znEcTVZrWSAOK3WjshvUTlnFQFJkh14tGtbLmmMszIBgRnXNTrNMOY5cUkOLnQfYAg1Bk+cKGOLnOApFcNMopMjiop1lahxMfpp9Sowgl29rHKBlHAyVD3HCSM8wPMa9FLXMjdGYE8ZHtGn1RBOHDmad2UZ8e3mhwgnIFsVaZqdK6Cii0ti6BpBE6E5ZZyisQGndOpz464p5fBBBYDOINmaaEQKdseCzjJIFInenU6eFFpWjMTgAY1MdlB3eKTbgTAHYO6eqQPM+kFnhtGjM4STlx/RQh9IbMtcyXSS0mv5iuXow8Oct1oTGPjIkdsKxeLi9lYkcR8QqgK4OjRs9ovGs9fmrl12m1xAdunwnqsdoUwpQ9T2oHPAzgDmse534so6S3vI6clo2d6Y+gI7aeagdCkIpUtdy7EAoHNRPeAVz3cECmMHDwSbW71pkcwdfkrYKkgIMTarYDeuWmRyWU8ra242Gt/N8CsYhWAqc+Y/X4ICaKzYgFw6O/tKplWENsnVaeY81qWjjia3Jo0AO9XUjIKhs9kvFJgExPd4lXntJxAOh5z4Rp07FJUVvaAuBOhIgCTTzqga9uMuETEuzFG1qOxDaOJIxgyBJkzMZCZ4+RQ2THteSTiDgZEVkitNOqos2kkuaJEAGYp0aRxSXsc5tN0yZmD1M81LHwDiIDshHWaBDe3mkbsxi410+uKgaLyHgtBaIoKxJiaSEyzcRIJxE8QARSCIyhVi0SBFAaH/k3poE0cdaoF3Zpa0yayK01IhNvD5BOXPKISrV8AHMGO88eQUXx4a2DX9c0Hm/SJ8vZBncqctVyDbhqwigIMDlIXL0YOsOcvotmZFVTvOz2Oq2h5ZFXbPKF2FeZ0Y7tnPGgPRI9XWDMr0jMkm0uzX5jtGatrTAIUt4LTttlECjsXLIqobGDBBB5paHWW0HNjFDgO+Oqv2N8Y/I14HP9VkOs+iUWoPRuQltZWCy9Pbk4xwOSvXfaQyfIPHRShoyiCQy0a7IyOSLH0UFHbp3G/m+BWI5be2jLG/m+BWG9agOuJ3x0d/a5UAFcub9+eDX/wBpVQqjR2JZy5x4N8z+i032FZ/yqmwG7r3cSB3V+K0wFJ5Ge+xmhEzxj64pUNxgAw8iNQJgyROeZWm5oOiA2TciAeGqljKbBfhD2mBEnUt4EZdVzyWtGQ4g8hQGcuHaFetLJlDA4CnhyRCxBkGsj6iVbFNjAYfPtGc5A6nRKriJMDgaxBzBVr1MUFPhVLtrF5MiOEVrmM9EAWpAaScozGvBVA1wbAJwzJnWYVv1ZOYwu4TIplCrvY5oALZ6ZislIGD6SGcEUjF/1XJ3pOyPV55OFY/DMd65d8HWGJ5e6RglLAC5j152z2owk4pTWIHtCm0sWuFQCgB5pkoM28bNH2T2HLvWZb3V7faHdUL0DXzyhcRPRB5fCFBC3LexY4xh7QFSfs5xG6ew596tjKDyDIoetVfsdoPjeg+BVe0sXNO8COqHFRJF2+3pr2EVBBBghZT045JUJAbdbP8AmHgx3jRUHCitttsIdGrS3sKquVgbmyG/w6cTKvEqhsl8Nw0znsPBaAqszyJxKXN1UFoSzM0NPFBzm55KA2aJjjSTmojgEChZwCCZn6ooLSmvCAtkIK7zy7UDz399E4sPFQ5pQeZ9K27tn1d/1UIvTBsMYfxEeChdcPDMvVMv7D9tnvN+aMXyz/qM95vzXyy75dqcFrS9TO+nNvtmPts95vzR/v8AZ/fZ7zfmvlq4JpepqePqrNo2X32e8Pmm/v8AZ/1LP3m/NfJVxU0vVzvq7b5Zk+2z32/NDb31lAHNPaOa+UqQml6mp4+qstmmoI70Xrm5YhK+Urgppemp4+qkg6goBdmcG9y+WNeUQtDxPeU0vV1PHuL/AGbWvhv0TwUOZMQ0wV4n1ruJ7yibeH/ecOhPzV0vTO96zZ4cIdIPKiq3jZDm1acXLVePbfLT+o/33fNS3adt/VtPed8005/VzPU2T3sIGE8Igrbu+KN6F4AbUt/6r/eJ81w21eP6rvD5LOQzPorWeKgCF8+HpBeR/wC09zfknM9IbxPtg9Wt+SmSVzPekUQmOi8N/wCTXji33QgHpTb8Ge6fmplkzPcuE0AXOPELx9n6VW3Bnc7/AOlZdt61Jb7IroDXrVScK29IGmii0Ys27Xt7szqP8dFpl5WapbeY9MwfVNP4472u+ShWfSYzZD84/tcuXXDOznMP/9k=" class="w-full rounded-lg" alt="chair" />
+
+
+                  </a>
+                
+                </a>
+
+              </div>
+
+
+
+                <div class="sm:w-1/2 sm:mt-0 mt-4 relative hover:shadow-2xl">
+                  <a href="/about_ahmet_hamdi">
+
+                    <div>
+                    
+                      <div class="absolute bottom-0 left-0 p-6 ">
+                        <h2 class="text-xl font-semibold 5 text-white ">Ahmet Hamdi Tanpınar Hakkında</h2>
+                      </div>
+                      <img src=" https://i.idefix.com/pimages/Content/Uploads/ArtistImages/artist__264346.jpg" class="w-full rounded-lg" alt="wall design" />
+                    </div>
+                  </a>
+
+                
+
+                
+                </div>
+              </div>
+
+
+
+              <div class="relative hover:shadow-2xl">
+                <a href="/ahmet_hamdi_howtogo">
+                <div>
+
+             
+                  <div class="absolute bottom-0 left-0 md:p-10 p-6">
+                    <h2 class="text-xl font-semibold 5 text-dark">Nasıl Gidelim</h2>
+                  </div>
+                 
+                </div>
+             
+                  <img src="https://www.soylentidergi.com/wp-content/uploads/2020/06/PHOTO-2020-06-23-21-20-08.jpg" alt="sitting place" class="w-full mt-8 md:mt-6 hidden sm:block rounded-lg" />
+                </a>
+              </div>
+          
+            </div>
+
+
+
+            <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between ">
+              <div class="relative hover:shadow-2xl">
+
+                <a href="/about_ahmet_hamdi_muze">
+
+                  <div>
+                  
+                    <div class="absolute bottom-0 left-0 md:p-10 p-6 ">
+                      <h2 class="text-xl font-semibold 5 text-white">Müze Hakkında</h2>
+                    </div>
+                  </div>
+                  <img src="http://www.fatih.gov.tr/kurumlar/fatih.gov.tr/...Kaan_Peker/arkeoloji/Alay_K%C3%B6%C5%9Fk%C3%BC_Fatih_%C4%B0stanbul.jpg" alt="sitting place" class="w-full sm:block hidden rounded-lg"/>
+                </div>
+
+                </a>
+               
+
+              
+              <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
+                <div class="relative w-full hover:shadow-2xl">
+
+                  <a href="/ahmet_hamdi_hours">
+                    <div>
+                      <div class="absolute bottom-0 left-0 p-6">
+                        <h2 class="text-xl font-semibold 5 text-white">Ziyaret Saatleri</h2>
+                      </div>
+                    </div>
+                    <img src="https://i.pinimg.com/originals/b1/a9/53/b1a953e8fec72cc1e6c8e90043b58099.jpg" class="w-full rounded-lg" alt="chair" />
+                  </div>
+
+
+                  </a>
+                  
+
+
+
+                
+                <div class="relative w-full sm:mt-0 mt-4 hover:shadow-2xl">
+                  <a href="/visitor">
+                  <div>
+                    <div class="absolute bottom-0 left-0 p-6 ">
+                      <h2 class="text-xl font-semibold 5 text-white">Ziyaretçi Katkıları</h2>
+                    </div>
+                  </div>
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/49/30/03/museum-visitors.jpg?w=500&h=500&s=1" class="w-full rounded-lg" alt="wall design" />
+                  
+                </a>
+                </div>
+
+
+                
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+        
+<!--
+
+
+
+
+    <div class="container flex flex-row px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+
+        <div class="w-full lg:w-1/2">
+
+            <div class="lg:max-w-lg">
+
+                {%for e in eserler%}
+
+                <div class="max-w-sm w-full lg:max-w-full lg:flex ">
+                   
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                      <div class="mb-8">
+                        <p class="text-sm text-gray-600 flex items-center">
+                          
+                            {{e.eser_sahibi}}
+                        </p>
+                        <div class="text-gray-900 font-bold text-xl mb-2">{{e.eser}}</div>
+                        <p class="text-gray-700 text-base">{{e.detail}}</p>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="text-sm">
+                          <p class="text-gray-900 leading-none">{{e.eserci}}</p>
+                          <p class="text-gray-600">{{e.date_added}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                {%endfor%}
+          
+          
+          
+            </div>
+
+        
+        </div>
+
+        
+    </div>
+
+
+  <div class="mb-16">
+ Code block starts -->
+-->
+
+
+    
+
+
+            <footer class="footer bg-black relative pt-1 border-b-2 border-blue-700" id="footer">
+                <div class="container mx-auto px-6">
+            
+                    <div class="sm:flex sm:mt-8">
+                        <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
+                            <div class="flex flex-col mb-4">
+                                <span class="font-bold text-gray-400 uppercase mt-4 md:mt-0 mb-2">İletİşİm</span>
+                                <span class="my-2"><a href="https://mail.google.com/mail/u/0/#inbox" class="text-white text-md hover:text-blue-500">atasoyfomer@gmail.com</a></span>
+                                <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-500">0507 908 4142</a></span>
+                            </div>
+                            <div class="flex flex-col mb-4">
+
+
+                                <span class="font-bold text-gray-400 uppercase mb-2">Sosyal Medya</span>
+                                <span class="my-2"><a href="https://github.com/" class="text-white  text-md hover:text-blue-500">GitHub</a></span>
+                                <span class="my-2"><a href="https://twitter.com/" class="text-white text-md hover:text-blue-500">Twitter</a></span>
+                                <span class="my-2"><a href="https://www.instagram.com/?hl=tr" class="text-white text-md hover:text-blue-500">Instagram</a></span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+
+            
+
+
+
+
+</body>
+</html>

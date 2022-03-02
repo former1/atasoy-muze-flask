@@ -372,6 +372,110 @@ def about_mehmet_akif_muze():
 
 
 
+"""Ahmet Hamdi"""
+
+@app.route("/ahmet_hamdi_museum")
+def ahmet_hamdi_museum():
+    return render_template("ahmet_hamdi_museum.html")
+
+
+@app.route("/ahmet_hamdi_howtogo")
+def ahmet_hamdi_howtogo():
+    return render_template("ahmet_hamdi_howtogo.html")
+
+
+@app.route("/ahmet_hamdi_galeri")
+def ahmet_hamdi_galeri():
+    return render_template("ahmet_hamdi_galeri.html")
+
+
+@app.route("/ahmet_hamdi_hours")
+def ahmet_hamdi_hours():
+    return render_template("ahmet_hamdi_hours.html")
+
+
+@app.route("/about_ahmet_hamdi")
+def about_ahmet_hamdi():
+    return render_template("about_ahmet_hamdi.html")
+
+
+@app.route("/about_ahmet_hamdi_muze")
+def about_ahmet_hamdi_muze():
+    return render_template("about_ahmet_hamdi_muze.html")
+
+
+
+
+
+"""Asiyan """
+
+@app.route("/asiyan_museum")
+def asiyan_museum():
+    return render_template("asiyan_museum.html")
+
+
+@app.route("/asiyan_howtogo")
+def asiyan_howtogo():
+    return render_template("asiyan_howtogo.html")
+
+
+@app.route("/asiyan_galeri")
+def asiyan_galeri():
+    return render_template("asiyan_galeri.html")
+
+
+@app.route("/asiyan_hours")
+def asiyan_hours():
+    return render_template("asiyan_hours.html")
+
+
+@app.route("/about_asiyan")
+def about_asiyan():
+    return render_template("about_asiyan.html")
+
+
+@app.route("/about_asiyan_muze")
+def about_asiyan_muze():
+    return render_template("about_asiyan_muze.html")
+
+
+
+
+
+"""Ahmet Arif"""
+
+@app.route("/ahmet_arif_museum")
+def ahmet_arif_museum():
+    return render_template("ahmet_arif_museum.html")
+
+
+@app.route("/ahmet_arif_howtogo")
+def ahmet_arif_howtogo():
+    return render_template("ahmet_arif_howtogo.html")
+
+
+@app.route("/ahmet_arif_galeri")
+def ahmet_arif_galeri():
+    return render_template("ahmet_arif_galeri.html")
+
+
+@app.route("/ahmet_arif_hours")
+def ahmet_arif_hours():
+    return render_template("ahmet_arif_hours.html")
+
+
+@app.route("/about_ahmet_arif")
+def about_ahmet_arif():
+    return render_template("about_ahmet_arif.html")
+
+
+@app.route("/about_ahmet_arif_muze")
+def about_ahmet_arif_muze():
+    return render_template("about_ahmet_arif_muze.html")
+
+
+
+
 
 
 
