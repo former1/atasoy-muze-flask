@@ -3,7 +3,6 @@ from email.policy import default
 from re import search
 import re
 from flask import Flask, render_template, request, redirect, url_for,flash, session
-import sqlalchemy
 from flask_sqlalchemy import SQLAlchemy
 import os 
 from datetime import datetime
