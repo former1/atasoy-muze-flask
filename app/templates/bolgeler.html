@@ -464,10 +464,12 @@
          <div class = "">
             <div class="group inline-block border-2 mx-4 my-2 p-5  bg-white bg-opacity-40 rounded-xl ">
                 <button
-                class="text-white h-32 w-96 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="text-white h-32 w-96 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   <span class="pr-1 font-semibold flex-1 text-4xl">Akdeniz</span>
                   <span>
+
+                    
 
                     <svg
                       class="fill-current h-4 w-4 transform group-hover:-rotate-180
@@ -484,10 +486,23 @@
                 </button>
 
 
-                <ul
-                  class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
-                transition duration-150 ease-in-out origin-top min-w-32"
-                >
+                
+              <ul
+              class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+            transition duration-150 ease-in-out origin-top min-w-32"
+            >
+            <a href="/cahit_sıtkı_museum">
+                <li class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white h-20">
+                    <p class="text-lg text-center">Cahit Sıtkı Tarancı Müzesi</p>
+                </li>
+            </a>
+
+            <a href="/ahmet_arif_museum">
+              <li class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white h-20">
+                  <p class="text-lg text-center">Ahmet Arif Edebiyat Müzesi</p>
+              </li>
+          </a>
+
                
                  
               </div>
@@ -515,6 +530,76 @@
         
         </div>
 
+
+
+        
+
+        <div class = "">
+          <div class="group inline-block border-3 mx-4 my-2 p-5  bg-white bg-opacity-40 rounded-xl ">
+              <button
+              class="text-white h-32 w-96 bg-red-700 hover:bg-blue-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                <span class="pr-1 font-semibold flex-1 text-4xl">Yabancı</span>
+                <span>
+
+                  
+
+                  <svg
+                    class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                    transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+
+                  </svg>
+                </span>
+              </button>
+
+
+              
+            <ul
+            class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+          transition duration-150 ease-in-out origin-top min-w-32"
+          >
+          <a href="/dickens_museum">
+              <li class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white h-20">
+                  <p class="text-lg text-center">Charles Dickens Müzesi</p>
+              </li>
+          </a>
+
+             
+               
+            </div>
+            
+            <style>
+
+              li>ul                 { transform: translatex(100%) scale(0) }
+              li:hover>ul           { transform: translatex(101%) scale(1) }
+              li > button svg       { transform: rotate(-90deg) }
+              li:hover > button svg { transform: rotate(-270deg) }
+            
+              /* Below styles fake what can be achieved with the tailwind config
+                 you need to add the group-hover variant to scale and define your custom
+                 min width style.
+                   See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+                   for implementation with config file
+              */
+              .group:hover .group-hover\:scale-100 { transform: scale(1) }
+              .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+              .scale-0 { transform: scale(0) }
+              .min-w-32 { min-width: 8rem }
+            </style>
+
+
+      
+      </div>
+
+       
+
+
          
  
             
@@ -527,31 +612,6 @@
 
         </div>
 
-
-            <footer class="footer bg-black relative pt-1 border-b-2 border-blue-700" id="footer">
-                <div class="container mx-auto px-6">
-            
-                    <div class="sm:flex sm:mt-8">
-                        <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-around">
-                            <div class="flex flex-col mb-4">
-                                <span class="font-bold text-gray-400 uppercase mt-4 md:mt-0 mb-2">İletİşİm</span>
-                                <span class="my-2"><a href="https://mail.google.com/mail/u/0/#inbox" class="text-white text-md hover:text-blue-500">atasoyfomer@gmail.com</a></span>
-                                <span class="my-2"><a href="#" class="text-white  text-md hover:text-blue-500">0507 908 4142</a></span>
-                            </div>
-                            <div class="flex flex-col mb-4">
-
-
-                                <span class="font-bold text-gray-400 uppercase mb-2">Sosyal Medya</span>
-                                <span class="my-2"><a href="https://github.com/" class="text-white  text-md hover:text-blue-500">GitHub</a></span>
-                                <span class="my-2"><a href="https://twitter.com/" class="text-white text-md hover:text-blue-500">Twitter</a></span>
-                                <span class="my-2"><a href="https://www.instagram.com/?hl=tr" class="text-white text-md hover:text-blue-500">Instagram</a></span>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-                
-            </footer>
 
             
 
